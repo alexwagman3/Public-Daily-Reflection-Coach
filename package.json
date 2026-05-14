@@ -1,0 +1,17 @@
+{
+  "name": "reflection-coach-api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pluggable multi-turn reflection coach. Cloudflare Worker backed by DeepSeek Reasoner.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "wrangler": "^3.78.0"
+  },
+  "license": "MIT"
+}

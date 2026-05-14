@@ -1,0 +1,16 @@
+name = "reflection-coach-api"
+main = "src/index.js"
+compatibility_date = "2025-05-01"
+
+# Replace with your Cloudflare account id, or set CLOUDFLARE_ACCOUNT_ID in env.
+# account_id = "<your-account-id>"
+
+# Public secrets are set via:  wrangler secret put DEEPSEEK_API_KEY
+# Non-secret config can go in [vars] below.
+
+[vars]
+# Restrict browser origins that may call the API. Use "*" to allow any.
+# Example: ALLOWED_ORIGIN = "https://your-username.github.io"
+ALLOWED_ORIGIN = "*"
+
+# Local dev reads secrets from .dev.vars (see .dev.vars.example).

@@ -1,0 +1,4 @@
+# Copy this file to `.dev.vars` and fill in real values for `wrangler dev`.
+# `.dev.vars` is gitignored. For production, use `wrangler secret put DEEPSEEK_API_KEY`.
+
+DEEPSEEK_API_KEY="sk-your-deepseek-key-here"
