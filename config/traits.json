@@ -1,0 +1,65 @@
+{
+  "$schema": "./traits.schema.json",
+  "version": "1.0",
+  "system": {
+    "name": "Stoic Virtues",
+    "description": "Daily reflection on the four cardinal virtues of classical Stoicism.",
+    "coachPersona": "philosophical reflection coach trained in the Stoic tradition",
+    "goalStatement": "Help the user practice the chosen virtue through honest, specific self-reflection — not abstract theorizing. Guide them through the framework one section at a time. Analyze their answers — if they are being surface-level or letting themselves off easy, push back and ask follow-up questions. Do not move on until you have gone deep. End by helping them apply the specific quote and core truth to their situation.",
+    "anchorLabel": "quote"
+  },
+  "traits": {
+    "wisdom": {
+      "name": "Wisdom",
+      "descriptors": "Discerning · Prudent · Clear-Seeing",
+      "framework": "Decision Dissection",
+      "recall": "Recall a decision you made today (or avoided) where wisdom was required.",
+      "steps": [
+        { "label": "Observe", "prompt": "What facts did you actually have? What assumptions did you add? What emotions were influencing your judgment?" },
+        { "label": "Consult", "prompt": "Who has perspective or experience in this area? What would a person you respect likely say about this situation?" },
+        { "label": "Extract", "prompt": "What are the second- and third-order effects of this decision? What alternative exists beyond the options you were considering?" }
+      ],
+      "remember": "Wisdom is loving the right things in the right order.",
+      "anchor": "\"It is not the man who has too little, but the man who craves more, that is poor.\" — Seneca"
+    },
+    "courage": {
+      "name": "Courage",
+      "descriptors": "Honest · Brave · Steady Under Fear",
+      "framework": "Discipline of Bravery",
+      "recall": "Recall a moment today where you withheld something true, kind, or needed — or avoided a hard action.",
+      "steps": [
+        { "label": "Surface", "prompt": "Identify the specific fear present (rejection, conflict, failure, vulnerability, loss of control). What is the worst realistic outcome?" },
+        { "label": "Weigh",   "prompt": "What is the cost of staying comfortable? What is the cost of acting with courage?" },
+        { "label": "Commit",  "prompt": "What is one step — however small — you can take tomorrow to move toward what you've been avoiding? Choose the action and schedule it." }
+      ],
+      "remember": "Courage is not the absence of fear but the realization that something else matters more.",
+      "anchor": "\"You have power over your mind — not outside events. Realize this, and you will find strength.\" — Marcus Aurelius"
+    },
+    "justice": {
+      "name": "Justice",
+      "descriptors": "Fair · Accountable · Other-Regarding",
+      "framework": "Inner View & Outer View",
+      "recall": "Recall a moment today you felt superior, defensive, or needed to be right — or where you owed someone something you didn't give.",
+      "steps": [
+        { "label": "Inner View",  "prompt": "What were you protecting or promoting about yourself? What weakness or limitation are you reluctant to admit?" },
+        { "label": "Outer View",  "prompt": "Who did you overlook, interrupt, or dismiss — and where did pride or self-interest keep you from listening, asking, or giving them their due?" },
+        { "label": "Ground",      "prompt": "What is one specific way you will elevate or serve someone else tomorrow?" }
+      ],
+      "remember": "Justice is giving each person — including yourself — exactly what they are owed, no more and no less.",
+      "anchor": "\"What injures the hive injures the bee.\" — Marcus Aurelius"
+    },
+    "temperance": {
+      "name": "Temperance",
+      "descriptors": "Disciplined · Patient · Measured",
+      "framework": "Impulse Audit",
+      "recall": "Recall a moment you acted on impulse or reacted too quickly.",
+      "steps": [
+        { "label": "Trace",   "prompt": "What was the trigger? What emotion drove the impulse? What is that emotion trying to tell you?" },
+        { "label": "Rewind",  "prompt": "What would a 10-second pause have revealed after the trigger appeared? How does giving in today quietly shape the outcomes you experience tomorrow?" },
+        { "label": "Prepare", "prompt": "What specific if-then plan will you commit to when this trigger arises in the future? What boundary can you set before this happens again?" }
+      ],
+      "remember": "Temperance is caring more about the person you're becoming than the comfort you're craving.",
+      "anchor": "\"No man is free who is not master of himself.\" — Epictetus"
+    }
+  }
+}
