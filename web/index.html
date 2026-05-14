@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reflection Coach</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Reflection Coach</h1>
+      <p class="subtitle">Multi-turn reflection on the trait of your choice.</p>
+    </header>
+
+    <section id="config-panel">
+      <label>
+        API base URL
+        <input id="api-base" type="url" placeholder="https://reflection-coach-api.YOUR-SUBDOMAIN.workers.dev" />
+      </label>
+      <p class="hint">Points the chat at your deployed Worker. Saved locally in your browser.</p>
+    </section>
+
+    <section id="trait-panel">
+      <label>
+        Trait
+        <select id="trait-select"></select>
+      </label>
+      <button id="start-btn" type="button">Start session</button>
+      <button id="reset-btn" type="button" class="ghost" hidden>Reset</button>
+    </section>
+
+    <section id="chat" hidden>
+      <div id="log" aria-live="polite"></div>
+      <form id="chat-form">
+        <textarea id="input" rows="3" placeholder="Type your reflection…" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p class="status" id="status"></p>
+    </section>
+
+    <footer>
+      <small>
+        Open source · <a href="https://github.com/" id="repo-link">view on GitHub</a>
+      </small>
+    </footer>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
